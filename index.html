@@ -16,7 +16,7 @@
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#home">Home</a>
         <a href="#about">Biography</a>
-        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
         <a href="#job">Job</a>
         <a href="#papers">Papers</a>
         <a href="#intellectual-property">Intellectual Property</a>
@@ -32,9 +32,17 @@
 
     <main>
       <section class="hero" id="home">
+        <div class="space-animation" aria-hidden="true">
+          <span class="comet comet-one"></span>
+          <span class="comet comet-two"></span>
+          <span class="comet comet-three"></span>
+          <span class="asteroid asteroid-one"></span>
+          <span class="asteroid asteroid-two"></span>
+          <span class="spaceship"></span>
+        </div>
         <div class="hero-inner">
           <div class="hero-copy">
-            <p class="eyebrow">Hi, I am</p>
+            <p class="eyebrow greeting" data-greeting aria-live="polite">Hi, I am</p>
             <h1>Cuong Huynh</h1>
             <p class="role">AI Engineer</p>
             <p class="intro">
@@ -53,7 +61,7 @@
             </div>
             <div class="hero-actions">
               <a class="button button-primary" href="mailto:cuonghn.saigon@gmail.com">Hire Me</a>
-              <a class="button button-secondary" href="assets/Resume.pdf" download="Resume.pdf">Download CV</a>
+              <a class="button button-secondary" href="Resume.pdf" download="Cuong_Huynh_Resume.pdf">Download CV</a>
             </div>
             <div class="stats" aria-label="Resume highlights">
               <div>
@@ -89,14 +97,16 @@
 
           <div class="about-main">
             <p class="about-highlight">
-              I'm an undergraduate Computer Science student at the University of Oklahoma with a 3.95/4 GPA,
-              expected to graduate in May 2028. I have a strong foundation in AI/ML research,
-              web development, and natural language processing. I'm passionate about performant, accessible interfaces and reproducible research at the intersection of NLP and web tech.
+              I'm an undergraduate Computer Science student at the University of Oklahoma with minors in
+              Mathematics and Electrical and Computer Engineering, a 3.95/4.00 GPA, and an expected graduation
+              date of May 2028.
             </p>
           </div>
 
           <p class="about-research">
-            My research focuses on leveraging large language models to automate and optimize web design generation, text simplification, and low-level sentence generation. I'm passionate about applying cutting-edge AI techniques to solve real-world problems.
+            My work brings together language models, web systems, and collaborative interfaces: text simplification
+            pipelines, responsive web design generation from wireframes, and an AI-powered digital whiteboard for
+            math sketching and real-time collaboration.
           </p>
 
           <div class="about-section-group education-block">
@@ -104,7 +114,7 @@
             <div class="education-item">
               <h4>Bachelor of Science in Computer Science</h4>
               <p class="meta">University of Oklahoma, Norman, OK</p>
-              <p class="meta">Minor: Mathematics | GPA: 3.95/4 | Expected: May 2028</p>
+              <p class="meta">Minors: Mathematics and Electrical and Computer Engineering | GPA: 3.95/4.00 | Expected: May 2028</p>
             </div>
           </div>
 
@@ -113,8 +123,10 @@
             <ul class="awards-list">
               <li>Excellent Outstanding NRTW Award (2024-2028)</li>
               <li>International Undergraduate NRTW Award (2024-2028)</li>
-              <li>Freshman Welcome Home Residential Scholarship (2024-2025)</li>
               <li>Wesley R. Mote Endowed Engineering Scholarship</li>
+              <li>Undergraduate Research Opportunities Program (UROP) Scholarship (Spring and Fall 2026)</li>
+              <li>Clyde J. Cecil Memorial Scholarship</li>
+              <li>Paper: OUNLP at TSAR 2025 Shared Task: Multi-Round Text Simplifier via Code Generation</li>
             </ul>
           </div>
 
@@ -124,46 +136,55 @@
               <div class="stat-label">GPA</div>
             </div>
             <div class="stat-box">
-              <div class="stat-number">4+</div>
-              <div class="stat-label">Roles</div>
+              <div class="stat-number">3</div>
+              <div class="stat-label">Research Projects</div>
             </div>
             <div class="stat-box">
-              <div class="stat-number">5+</div>
-              <div class="stat-label">Languages</div>
+              <div class="stat-number">6</div>
+              <div class="stat-label">Languages & Frameworks</div>
             </div>
             <div class="stat-box">
-              <div class="stat-number stat-date">June<br>10,<br>2006</div>
-              <div class="stat-label">Date of birth</div>
+              <div class="stat-number stat-date">May<br>2028</div>
+              <div class="stat-label">Expected Graduation</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="experience" class="research-section">
+      <section id="research" class="research-section">
         <div class="section-container">
           <div class="section-header">
-            <h2 class="section-title">Research Experience</h2>
+            <h2 class="section-title">Research</h2>
             <div class="accent-line"></div>
           </div>
+          <p class="research-intro">
+            My recent work focuses on LLM-driven interfaces, text simplification pipelines, and collaborative AI tools that turn sketches, wireframes, and language into usable software experiences.
+          </p>
 
           <div class="research-timeline">
             <article class="research-item">
               <div class="research-marker"></div>
               <div class="research-content">
                 <h3>
-                  LLM-Based Evolutionary Text Generation
-                  <a href="https://github.com/Rickie2k6/Text_Openevolve" target="_blank" rel="noopener noreferrer" class="research-link" aria-label="View Text Openevolve on GitHub">
+                  AI-Powered Digital Whiteboard
+                  <a href="https://github.com/Rickie2k6/Final_Talk_Sketch" target="_blank" rel="noopener noreferrer" class="research-link" aria-label="View AI-powered whiteboard on GitHub">
                     <i class="fa-brands fa-github" aria-hidden="true"></i>
                   </a>
                 </h3>
-                <p class="research-date">Jan 2026 - Present</p>
+                <p class="research-date">January 2026 - Present</p>
                 <p class="research-location">Devon Energy Hall, University of Oklahoma</p>
                 <ul class="highlights">
-                  <li>Extended the OpenEvolve framework to optimize low-level sentence generation using evolutionary algorithms</li>
-                  <li>Designed compositional strategies enabling single or multi-method hybrid generation pipelines</li>
-                  <li>Achieved target linguistic complexity levels through LLM-based research</li>
-                  <li>Implemented in Python and deployed on Wukong server for large-scale experimentation</li>
+                  <li>Built an AI-powered digital whiteboard using Excalidraw, React, and Socket.IO for math sketching, chat assistance, and collaboration.</li>
+                  <li>Integrated GPT-based math recognition by exporting sketches as images and rendering recognized expressions as LaTeX.</li>
+                  <li>Developed collaborative room features for participant tracking, scene synchronization, room sharing, and interaction history.</li>
                 </ul>
+                <div class="research-tags" aria-label="Research technologies">
+                  <span>React</span>
+                  <span>Excalidraw</span>
+                  <span>Socket.IO</span>
+                  <span>GPT</span>
+                  <span>LaTeX</span>
+                </div>
               </div>
             </article>
 
@@ -176,14 +197,18 @@
                     <i class="fa-brands fa-github" aria-hidden="true"></i>
                   </a>
                 </h3>
-                <p class="research-date">Jan 2026 - Present</p>
+                <p class="research-date">January 2026 - May 2026</p>
                 <p class="research-location">Devon Energy Hall, University of Oklahoma</p>
                 <ul class="highlights">
-                  <li>Leveraged large language models to automate responsive web design generation</li>
-                  <li>Developed a pipeline generating fully responsive webpages from wireframe inputs (mobile, tablet, desktop)</li>
-                  <li>Integrated multiple external LLMs for diverse output generation</li>
-                  <li>Enhanced user experience through intelligent design adaptation</li>
+                  <li>Used large language models to automate responsive web design generation.</li>
+                  <li>Developed a pipeline to generate responsive webpages from mobile, tablet, and desktop wireframe inputs.</li>
                 </ul>
+                <div class="research-tags" aria-label="Research technologies">
+                  <span>LLMs</span>
+                  <span>Responsive Design</span>
+                  <span>Wireframes</span>
+                  <span>Web Generation</span>
+                </div>
               </div>
             </article>
 
@@ -191,19 +216,32 @@
               <div class="research-marker"></div>
               <div class="research-content">
                 <h3>
-                  Text Simplification & Linguistic Complexity
-                  <a href="https://github.com/Rickie2k6/Sentence_Simplification" target="_blank" rel="noopener noreferrer" class="research-link" aria-label="View Sentence Simplification on GitHub">
-                    <i class="fa-brands fa-github" aria-hidden="true"></i>
-                  </a>
+                  Text Simplification & OpenEvolve
                 </h3>
-                <p class="research-date">June 2025 - Nov 2025</p>
+                <p class="research-date">June 2025 - February 2026</p>
                 <p class="research-location">Devon Energy Hall, University of Oklahoma</p>
                 <ul class="highlights">
-                  <li>Implemented a sentence transformation pipeline for text simplification to target proficiency levels</li>
-                  <li>Integrated multiple LLMs to generate and diversify candidate rewrites</li>
-                  <li>Designed candidate selection and evaluation logic based on linguistic and complexity constraints</li>
-                  <li>Deployed on Wukong server for large-scale experimentation</li>
+                  <li>Built a Python-based sentence transformation pipeline to simplify text to target proficiency and linguistic complexity levels.</li>
+                  <li>Integrated external language models and designed prompt, candidate generation, selection, and evaluation logic.</li>
+                  <li>Extended OpenEvolve to improve built-in functions and prompts for large-scale experiments on the Wukong server.</li>
                 </ul>
+                <div class="research-repos" aria-label="Related GitHub repositories">
+                  <a href="https://github.com/Rickie2k6/Sentence_Simplification" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span>Sentence Pipeline</span>
+                  </a>
+                  <a href="https://github.com/Rickie2k6/Text_Openevolve" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span>OpenEvolve</span>
+                  </a>
+                </div>
+                <div class="research-tags" aria-label="Research technologies">
+                  <span>Python</span>
+                  <span>NLP</span>
+                  <span>OpenEvolve</span>
+                  <span>Wukong</span>
+                  <span>Text Simplification</span>
+                </div>
               </div>
             </article>
           </div>
@@ -348,9 +386,9 @@
           <span class="papers-rule"></span>
           <article class="paper-card">
             <h3>OUNLP at TSAR 2025: Multi-Round Text Simplification via Code Generation</h3>
-            <a class="paper-code" href="https://github.com/Rickie2k6" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-github" aria-hidden="true"></i>
-              <span>Code</span>
+            <a class="paper-code" href="https://aclanthology.org/2025.tsar-1.19/" target="_blank" rel="noreferrer">
+              <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+              <span>Paper</span>
             </a>
             <p class="paper-venue">Fourth Workshop on Text Simplification, Accessibility and Readability (TSAR 2025)</p>
             <p>
@@ -383,7 +421,7 @@
             <article class="intel-card intel-card-featured">
               <span class="featured-label">Featured</span>
               <h3>BorrowIt - Peer-to-Peer Marketplace</h3>
-              <a class="intel-link" href="https://github.com/Rickie2k6" target="_blank" rel="noreferrer">
+              <a class="intel-link" href="https://github.com/Rickie2k6/Trading_Web_App" target="_blank" rel="noreferrer">
                 <i class="fa-brands fa-github" aria-hidden="true"></i>
                 <span>View Code</span>
               </a>

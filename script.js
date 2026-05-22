@@ -3,6 +3,27 @@ const navLinks = document.querySelector(".nav-links");
 const contactForm = document.querySelector("#contactForm");
 const jobNodes = document.querySelectorAll(".job-node");
 const jobDetails = document.querySelectorAll(".job-detail");
+const greeting = document.querySelector("[data-greeting]");
+const greetings = [
+  "Hi, I am",
+  "Xin chào, tôi là",
+  "你好，我是",
+  "नमस्ते, मैं हूं",
+];
+
+if (greeting) {
+  let greetingIndex = 0;
+
+  setInterval(() => {
+    greetingIndex = (greetingIndex + 1) % greetings.length;
+    greeting.classList.add("is-changing");
+
+    window.setTimeout(() => {
+      greeting.textContent = greetings[greetingIndex];
+      greeting.classList.remove("is-changing");
+    }, 180);
+  }, 2200);
+}
 
 menuToggle?.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("is-open");
